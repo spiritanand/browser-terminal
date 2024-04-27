@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import "@xterm/xterm/css/xterm.css";
 
 const term = new Terminal();
-const ws = new WebSocket("ws://localhost:5001");
+const ws = new WebSocket("wss://ws1.khela.pro");
 
 function XTerminal() {
   const terminalRef = useRef<HTMLDivElement | null>(null);

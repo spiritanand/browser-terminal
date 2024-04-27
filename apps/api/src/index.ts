@@ -1,5 +1,4 @@
 import http from "node:http";
-import { log } from "@repo/logger";
 import { WebSocketServer } from "ws";
 import { spawn } from "node-pty";
 import { createServer } from "./server";
@@ -16,7 +15,7 @@ wss.on("connection", (ws) => {
   });
 
   ws.on("message", (message) => {
-    log(`received: ${message}`);
+    console.log(`received: ${message}`);
 
     const data = JSON.parse(message.toString());
 
@@ -40,5 +39,5 @@ wss.on("connection", (ws) => {
 });
 
 server.listen(port, () => {
-  log(`api running on ${port}`);
+  console.log(`api running on ${port}`);
 });

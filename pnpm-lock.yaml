@@ -39,15 +39,6 @@ importers:
         specifier: ^8.16.0
         version: 8.16.0
     devDependencies:
-      '@repo/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/config-eslint
-      '@repo/jest-presets':
-        specifier: workspace:*
-        version: link:../../packages/jest-presets
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/config-typescript
       '@types/body-parser':
         specifier: ^1.19.5
         version: 1.19.5
