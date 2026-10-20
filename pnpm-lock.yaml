@@ -17,9 +17,6 @@ importers:
 
   apps/api:
     dependencies:
-      '@repo/logger':
-        specifier: workspace:*
-        version: link:../../packages/logger
       body-parser:
         specifier: ^1.20.2
         version: 1.20.2
